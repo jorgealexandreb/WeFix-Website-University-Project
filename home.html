@@ -31,11 +31,13 @@
 <div class="container" >
     <div class="searchHome">
       <h2>Resolva seus problemas em instantes! Busque um de nossos profissionais e agende o serviço em minutos!</h2>
-          <label><i>Search for services!</i></label>
+          <label>Search for services!</label>
           <br>
           <br>
-          <input class="searchBox" type="text" placeholder="Troca de lampada...">   
-          <p><button class="button">Buscar</button></p>     
+          <form action="http://localhost:81/test/searchResults.php" method="GET" enctype="multipart/form-data">
+            <input class="searchBox" name="search" type="text" placeholder="Digite aqui..."> </input>  
+            <input class="button" name="submit" type="submit" value="Buscar"></input>
+          </form>    
           
     </div> 
     <!-- <i class="fa fa-cog icon "></i>-->

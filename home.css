@@ -65,7 +65,7 @@ input{
     box-sizing: border-box;
 }
 
-button{
+.button{
     background: #17252A;
     color: #DEF2F1;
     margin-top: 15px;
