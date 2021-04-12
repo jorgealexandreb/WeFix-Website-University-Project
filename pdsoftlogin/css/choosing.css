@@ -119,16 +119,7 @@ body {
     border-top: 2px solid;
     border-color: #DEF2F1; 
     background-color:#17252A;
-    padding-bottom: 2%;
+    padding-bottom: 3.3%;
     padding-top: 3.5%;
     color: #DEF2F1;
 }
-
-@media (max-width: 600px) {
-    .footer {
-      background-color: red;
-      margin-top: 170px;
-      padding-bottom: 4.5%;
-      padding-top: 5.5%;
-    }
-  }

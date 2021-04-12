@@ -1,21 +1,25 @@
 html,
 body {
   height: 100%;
-  
+  margin: 0;
 }
 
 body {
   text-align: center;
   display: flex;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 5px;
   background-color: #DEF2F1;
+}
+
+p {
+  margin-bottom: 0px;
 }
 
 .form-signin {
   width: 100%;
   max-width: 330px;
-  padding: 15px;
+  padding: 12px;
   margin: auto;
 }
 
@@ -27,7 +31,7 @@ body {
   z-index: 2;
 }
 
-.form-signin input[type="email"] {
+.form-signin input[type="text"] {
   display: -webkit-box;
   display: -ms-flexbox;
   justify-content: center;
@@ -43,6 +47,15 @@ body {
   margin-left:auto;
 }
 
+.top-phrase {
+  position: absolute;
+  right: 0px;
+  left: 75%;
+  margin-top: 45px;
+  font-size: 1.3rem;
+  top: 4%;
+}
+
 .form-signin input[type="password"] {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -54,7 +67,7 @@ body {
   border-radius: 4px;
   width: 250px;
   margin-left: auto;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .login-img {
@@ -63,6 +76,8 @@ body {
 
 .fw-normal{
   margin-left: 8%;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 
@@ -70,7 +85,7 @@ body {
   background: #2B7A78;
   color: #DEF2F1;
   margin-top: 15px;
-  margin-bottom: 8px;
+  margin-bottom: 0px;
   display: inline-block;
   box-sizing: border-box;
   position: relative;
@@ -90,6 +105,6 @@ body {
 }
 
 .final-part {
-  margin-top: 25px;
+  margin-top: 20px;
   margin-bottom: 0px;
 }

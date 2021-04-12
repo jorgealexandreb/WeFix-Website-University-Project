@@ -36,8 +36,6 @@ h1 p {
     
 }
 
-
-
 p {
     margin-bottom: 0px;
 }
@@ -67,7 +65,33 @@ p {
 }
 
 .img-logo {
+    position: absolute;
+    left: 3%;
+    top: 8%;
     width: 15%;
-    height: 11%;
 }
+
+.btn {
+    background: #2B7A78;
+    color: #DEF2F1;
+    margin-bottom: 8px;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    padding: 12px 24px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 25%;
+    margin-top: 7px;
+}
+
+.btn:hover{
+    background: #17252A;
+  }
 
