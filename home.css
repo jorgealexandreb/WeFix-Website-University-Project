@@ -1,6 +1,7 @@
 body{
     background-color: #DEF2F1;
     color: #feffff;
+    margin: 0px;
 }
 
 .navigation{
@@ -82,10 +83,13 @@ button{
     text-align: center;
     cursor: pointer;
 }
-i{
-    height: 500px;
-    width: 50px;
-    z-index: -1;
+i:hover {
+    color: #3AAFA9;    
+}
+.icon{
+    position: absolute;
+    width: 200px;
+    height: 200px;
 }
 .mainPoints{
     width: 30%;
