@@ -23,7 +23,7 @@ if($conn->connect_error){
     $stmt = $conn->prepare("INSERT INTO User(userName, firstName, lastName, phone, email, password, city, adress, poscode, cc, ccval, nif) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
     $stmt ->bind_param("ssssssssssss", $username, $fName, $lName, $phone, $mail, $password, $city, $address, $postalCode, $cc, $ccval, $nif);
     $execval = $stmt->execute();
-    echo $execval;
+    header("Location: registsucess.php");
     $stmt.close();
     $conn.close();
 }
