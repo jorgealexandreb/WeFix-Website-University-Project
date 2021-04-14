@@ -17,7 +17,6 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
         if ($stmt->rowCount() === 1) {
             $user = $stmt->fetch();
 
-			$user_id = $user['userID'];
 			$user_name = $user['userName'];
             $user_password = $user['password'];
             
@@ -25,7 +24,6 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 
                 if ($password === $user_password){
                     
-                    $_SESSION['user_id'] = $user_id;
 					$_SESSION['user_name'] = $user_name;
 					$_SESSION['user_password'] = $user_password;
 			

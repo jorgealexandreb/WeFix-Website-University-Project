@@ -70,10 +70,6 @@ p {
   margin-bottom: 17px;
 }
 
-.login-img {
-  margin-left: 8%;
-}
-
 .fw-normal{
   margin-left: 8%;
   margin-top: 15px;
@@ -107,4 +103,13 @@ p {
 .final-part {
   margin-top: 20px;
   margin-bottom: 0px;
+}
+
+.logocontainer {
+  width: 63%;
+  margin-left: 16%;
+  height: 120px;
+  border: 1px solid;
+  height: 133px;
+  width: 76%;
 }

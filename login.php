@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -26,13 +27,12 @@
   </head>
 
   <body class="text-center">
-    <?php 
-      $imgUrl = "weFixLogo.png"; 
-      ?>
+
         <main class="form-signin">
-          <p class="top-phrase">Ainda não é utilizador? <a href="login.php">Registe-se.</a></p>
+          <p class="top-phrase">Ainda não é utilizador? <a href="choosing.php">Registe-se.</a></p>
           <form action="auth.php" method="post">
-            <img class="login-img" src="<?= $imgUrl; ?>" alt="" width="180" height="120">
+          <img src='/Users/alehxh/Desktop/pdsoftlogin/images' alt='photo'>
+
             <h1 class="fw-normal">Entrar</h1>
 
             <?php if($_GET['error']) { ?>
@@ -71,3 +71,4 @@
   
   </body>
 </html>
+

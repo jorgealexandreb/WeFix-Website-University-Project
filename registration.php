@@ -15,65 +15,79 @@
     <div class="main-container">
         <h2>Criar Conta</h2>
 
-        <form action="" method="post">
+        <form action="insertclient.php" method="post">
         <p>Nome de Utilizador</p>
         <div class="form-floating">
-            <input type="text" name="userName" class="form" placeholder="Nome de Utilizador">
+            <input type="text" class="form" name="username" placeholder="Nome de Utilizador" required>
             <label for="floatingInput"></label>
         </div>
 
         <p>Endereço de Email</p>
         <div class="form-floating">
-            <input type="email" class="form" placeholder="Endereço de Email">
+            <input type="email" class="form" name="email" placeholder="Endereço de Email" required>
             <label for="floatingInput"></label>
             </div>
 
         <p>Password</p>
         <div class="form-floating">
-            <input type="password" name="pass-word" class="form" placeholder="Password">
+            <input type="password" class="form" name="password" placeholder="Password" required>
             <label for="floatingInput"></label>
         </div>
 
 
         <p>Nome</p>
         <div class="form-floating">
-            <input type="text" class="form" placeholder="Nome">
+            <input type="text" class="form" name="firstName" placeholder="Nome" required>
             <label for="floatingInput"></label>
         </div>
 
         <p>Sobrenome</p>
         <div class="form-floating">
-            <input type="text" class="form" placeholder="Sobrenome">
+            <input type="text" class="form" name="lastName" placeholder="Sobrenome" required>
             <label for="floatingInput"></label>
         </div>
 
         <p>Número de telemovel</p>
         <div class="form-floating">
-            <input type="text" class="form" placeholder="Número de telemovel">
+            <input type="text" class="form" name="phone" placeholder="Número de telemovel" required>
             <label for="floatingInput"></label>
         </div>
 
+        <p>Cidade</p>
+        <div class="form-floating">
+            <input type="text" class="form" name="city" placeholder="Cidade" required>
+            <label for="floatingInput"></label>
+        </div>
+
+
         <p>Morada</p>
         <div class="form-floating">
-            <input type="text" class="form" placeholder="Morada">
+            <input type="text" class="form" name="address" placeholder="Morada" required>
             <label for="floatingInput"></label>
         </div>
 
         <p>Código Postal</p>
         <div class="form-floating">
-            <input type="text" class="form" placeholder="Código Postal">
+            <input type="text" class="form" name="postalCode" placeholder="Código Postal" required>
             <label for="floatingInput"></label>
         </div>
 
         <p>Número de Cartão de Crédito</p>
         <div class="form-floating">
-            <input type="text" class="form" placeholder="Número de Cartão de Crédito">
+            <input type="text" class="form" name="cc" placeholder="Número de Cartão de Crédito" required>
             <label for="floatingInput"></label>
         </div>
 
         <p>Validade do Cartão de Crédito</p>
         <div class="form-floating">
-            <input type="datetime-local" class="form" placeholder="Validade do Cartão de Crédito">
+            <input type="datetime-local" class="form" name="ccval" placeholder="Validade do Cartão de Crédito" required>
+            <label for="floatingInput"></label>
+        </div>
+
+
+        <p>NIF Pessoal</p>
+        <div class="form-floating">
+            <input type="text" class="form" name="nif" placeholder="NIF Pessoal" required>
             <label for="floatingInput"></label>
         </div>
 
@@ -83,54 +97,22 @@
             <label for="floatingInput"></label>
         </div>
 
-        <p>NIF Pessoal</p>
-        <div class="form-floating">
-            <input type="datetime-local" class="form" placeholder="NIF Pessoal">
-            <label for="floatingInput"></label>
-        </div>
-
-        <p>NIF da Empresa</p>
+            <p>NIF da Empresa</p>
         <div class="form-floating">
             <input type="datetime-local" class="form" placeholder="NIF da Empresa">
             <label for="floatingInput"></label>
         </div>
 
-        <button class="btn" type="submit">Registe-se</button>
-
+        <button class="btn" name="bttn" type="submit">Registe-se</button>
         </form>
+
+
         <div class="copyright-claim">
             <p>&copy;WeFix 2021. All rights reserved.</p>
         </div>
 
         
     </div>
-
-    <?php
-        session_start();
-            include("connection.php");
-            include("function.php");
-
-            if($_SERVER['REQUEST_METHOD']== "POST")
-            {
-                $user_name = $_POST['userName'];
-                $password = $_POST['pass-word'];
-
-                if(!empty($user_name) && !empty($password))
-                {
-                    $userID = random_num(20);
-                    $query = "insert into User (userID, userName, password) values ('$userID', '$userName', '$password')";
-                
-                    mysqli_query($conn, $query);
-
-                    header("Locaton: login.php");
-                    die;
-                }
-                else
-                {
-                    echo "Please enter valid information!";
-                }
-            }
-    ?>
     
 </body>
 </html>

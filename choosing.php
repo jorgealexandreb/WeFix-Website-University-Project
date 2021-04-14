@@ -1,3 +1,8 @@
+<?
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -22,14 +27,20 @@
             <br>
             <br>
             <br>
+            <form action="registrationclient.php" method="POST">
             <div class="seller-container">
                  <h2 class="title-div">Quero comprar!</h2>
-                 <button class="btn" type="submit">Criar conta</button>
+                 <button class="btn" name="buyer" type="submit">Criar conta</button>
             </div>
+            </form>
+            
+            <form action="registration.php">
             <div class="buyer-container">
                 <h2 class="title-div">Quero vender!</h2>
-                <button class="btn" type="submit">Criar conta</button>
+                <button class="btn" name="seller" type="submit">Criar conta</button>
             </div>
+            </form>
+            
         </div>
         <div class="footer">
             <p>&copy;WeFix 2021. All rights reserved.</p>
