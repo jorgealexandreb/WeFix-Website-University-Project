@@ -57,7 +57,7 @@
         <img src="usericon.png" alt="" width=25% height=15%>
         <h2><?=$_SESSION['user_name']?></h2>
 
-        <button id="first-btn" class="btn"><a href="index.php">Página inicial</a></button>
+        <button id="first-btn" class="btn"><a href="home.php">Página inicial</a></button>
         <button class="btn"><a href="logout.php">Logout</a></button>
 
 

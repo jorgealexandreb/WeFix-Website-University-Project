@@ -1,6 +1,7 @@
 <?php
 session_start();
 include 'connection.php';
+header("Location: login.php?error=Insira o seu nome de utilizador e password.");
 if (isset($_POST['username']) && isset($_POST['password'])) {
 
     $username = $_POST['username'];
@@ -30,14 +31,13 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 
                     header("Location: loginsuccess.php");
                 }else{
-                    header("Location: login.php?error=Nome de utilizador ou password incorreta.");
+                    $message="Nome de utilizador ou password incorreta.";;
                 }
             }else {
-
-                header("Location: login.php?error=Nome de utilizador ou password incorreta.");
+                $message="Nome de utilizador ou password incorreta.";;
             }
         }else {
-            header("Location: login.php?error=Nome de utilizador ou password incorreta.");
+            $message="Nome de utilizador ou password incorreta.";;
         }
     }
 }

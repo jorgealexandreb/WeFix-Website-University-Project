@@ -20,7 +20,7 @@ if($conn->connect_error){
     echo "$conn->connect_error";
     die("Connection failed");
 } else {
-    $stmt = $conn->prepare("INSERT INTO User(userName, firstName, lastName, phone, email, password, city, adress, poscode, cc, ccval, nif) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO user(userName, firstName, lastName, phone, email, password, city, adress, poscode, cc, ccval, nif) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
     $stmt ->bind_param("ssssssssssss", $username, $fName, $lName, $phone, $mail, $password, $city, $address, $postalCode, $cc, $ccval, $nif);
     $execval = $stmt->execute();
     header("Location: registsucess.php");

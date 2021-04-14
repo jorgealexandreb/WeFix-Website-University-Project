@@ -29,17 +29,20 @@
   <body class="text-center">
 
         <main class="form-signin">
-          <p class="top-phrase">Ainda não é utilizador? <a href="choosing.php">Registe-se.</a></p>
+          <p class="top-phrase">Ainda não é utilizador? <a href="home.php">Registe-se.</a></p>
           <form action="auth.php" method="post">
-          <img src='/Users/alehxh/Desktop/pdsoftlogin/images' alt='photo'>
+          <img src='images/weFixLogo.png' alt='photo'>
 
             <h1 class="fw-normal">Entrar</h1>
 
-            <?php if($_GET['error']) { ?>
+            
             <p>
-              <?=$_GET['error']?>
-              </p>
-            <?php } ?>
+            <?php
+                $message = "Insira o seu nome de utilizador e password";
+                echo $message;
+            ?>
+            </p>
+          
             <div class="form-floating">
             <input type="text" name="username" class="form-control" id="floatingInput" placeholder="Nome de Utilizador">
             <label for="floatingInput"></label>
