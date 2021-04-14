@@ -18,10 +18,10 @@ session_start();
     <img src="images/weFixLogo.jpg" alt="">
 
     <div class="container">
-        <div class="dash uno"></div>
-        <div class="dash dos"></div>
-        <div class="dash tres"></div>
-        <div class="dash cuatro"></div>
+        <div class="dash one"></div>
+        <div class="dash two"></div>
+        <div class="dash three"></div>
+        <div class="dash four"></div>
     </div>
 
     <div class="footer">
