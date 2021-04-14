@@ -1,6 +1,6 @@
 body{
-    background-color: #DEF2F1;
-    color: #feffff;
+    background-color: #feffff;
+    color: black;
     margin: 0px;
 }
 
@@ -33,39 +33,28 @@ body{
     color:black;
 }
 
-.container{
-    background-image: url(back.jpg);       
-    width: 100%;
-    height: 600px;
-    position: static;
-    background-size: cover;    
-    margin: 0px 0px 20px 00px;
+.bar{   
+    position: relative;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color:#17252A;
+    color: #DEF2F1;
+    text-align: center;
 }
 
-.searchHome{
-    background-color: #3AAFA9;
-    position:absolute;
-    top:30%;
-    left:30%;
-    margin: auto;
-    width: 40%;
-    padding:8px 16px;
-    border-radius: 20px;
-    border-color: #2B7A78;
-    opacity: 0.95;
-    color:#feffff;    
+.qtResults{
+    margin: 0px;
+    padding: 10px;
+    padding-bottom: 25px;
 }
 
-input{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
+.category{
+    float: left;
 }
 
 .button{
-    background: #17252A;
-    color: #DEF2F1;
+    background: #3aafA9;
+    color:  white;
     margin-top: 15px;
     margin-bottom: 8px;
     display: inline-block;
@@ -82,42 +71,41 @@ input{
     cursor: pointer;
 }
 
-i:hover {
-    color: #3AAFA9;    
+.searchBox{
+    margin: auto;
+    width: 40%;
+    height: 25px;
+    padding:8px 16px;
+    border-radius: 5px;
+    border-color: #2B7A78;
 }
 
-.icon{
-    position: absolute;
-    width: 200px;
+.searchHome{
+    background-color: #a4e2df;
+    text-align: justify;
+    position:relative;
+    top:30%;    
+    margin: 0px 400px;
+    width: 63%;
     height: 200px;
+    padding: 16px 16px;
+    border-radius: 10px;
+    border-color: #3aafA9;
+    opacity: 0.95;
 }
 
-.mainPoints{
-    width: 30%;
-    height: 30%;
-    background-size: cover; 
-    float: right;
-    padding-right: 15%;
-    padding-top: 10px;
-
-}
-
-.aboutUs{
-    color: black;  
-    background-color: #feffff; 
-    position: relative;
-    padding: 0px 0px 120px 20px;
-    text-align: center;
-    width: 100%;
-    height: auto;
-    position: static;
+.photo{
+    float:left;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
 }
 
 .footer{
     z-index: 1;
     position: relative;
     margin-top: 1%;
-    margin-bottom: 0%;
+    margin-bottom: 1%;
     border-top: 2px solid;
     border-color: #DEF2F1; 
     background-color:#17252A;
@@ -127,3 +115,14 @@ i:hover {
     text-align: center;
     padding: 20px 0px 20px 20px;
 }
+
+  
+  .custom-select{
+    position: absolute;
+    font-family: Arial;
+    margin: 50px 50px;
+  }
+
+  select, .catText{
+    margin: 10px 50px;
+  }

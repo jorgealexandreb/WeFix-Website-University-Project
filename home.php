@@ -11,19 +11,14 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
 <style>
   body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
-  .myLink {display: none}
-  
+  .myLink {display: none}  
 </style>
 
 <body class="home">
-
-  <!-- Navigation Bar -->
 <div class="navigation">    
-  <img class="logo-container" src="weFixLogo.png"> </img>
-  
+  <img class="logo-container" src="images/weFixLogo.png"> </img>  
   <?php
         if(!$_SESSION['user_name']){
             echo '<label class="top-phrase">Já é utilizador? <a href="">Entrar </a>ou<a href=""> Registrar</a></label>';
@@ -37,25 +32,23 @@
 <br>
 <br>
 
-
 <div class="container" >
     <div class="searchHome">
       <h2>Resolva seus problemas em instantes! Busque um de nossos profissionais e agende o serviço em minutos!</h2>
           <label>Search for services!</label>
           <br>
           <br>
-          <form action="http://localhost:81/test/searchResults.php" method="GET" enctype="multipart/form-data">
+          <form action="searchResults.php" method="GET" enctype="multipart/form-data">
             <input class="searchBox" name="search" type="text" placeholder="Digite aqui..."> </input>  
             <input class="button" name="submit" type="submit" value="Buscar"></input>
           </form>    
           
-    </div> 
-    <!-- <i class="fa fa-cog icon "></i>-->
+    </div>
 </div>
 
 <div class="aboutUs">
   <div class="infoUs">
-    <img class="mainPoints" src="light.jpg"> </img>
+    <img class="mainPoints" src="images/light.jpg"> </img>
     <br>
     <br>
     <h4> Voce está buscando por um serviço -  ...</h4>
