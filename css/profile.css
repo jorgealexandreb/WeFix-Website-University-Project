@@ -1,0 +1,156 @@
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  background-color: #DEF2F1;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.top-container{
+    text-align:center;
+    position: fixed;
+    color: #DEF2F1;
+    width: 100%;
+    height: 25%;
+    background-color: #17252A;
+    z-index: 1;
+    border-bottom: 1px solid #DEF2F1;
+}
+
+
+.side-container {
+    position: fixed;
+    width:15%;
+    height: 100%;
+    background-color: #17252A;
+    border-right: 1px solid #DEF2F1;
+}
+
+.title{
+    position: fixed;
+    background-color: #DEF2F1;
+    top: 200px;
+    left: 17%;;
+}
+
+
+.uwu {
+    margin-top:4.5%
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 220px;
+}
+
+nav ul li{
+    --c: #3AAFA9;
+    color: var(--c);
+    font-size: 16px;
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+}
+
+nav ul li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+nav ul li:hover {
+    color: black;
+}
+
+li {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+nav ul li:hover span {
+    transform: translateY(0) scale(2);
+}
+
+nav ul li span:nth-child(1) {
+    --n: 1;
+}
+
+nav ul li span:nth-child(2) {
+    --n: 2;
+}
+
+nav ul li span:nth-child(3) {
+    --n: 3;
+}
+
+nav ul li span:nth-child(4) {
+    --n: 4;
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    margin-top: 20%;
+}
+
+i:hover {
+    color: #3AAFA9;    
+}
+
+.pi-img{
+    position: absolute;
+    width: 14%;
+    height: 28%;
+    z-index: 2;
+    left: 21%;
+    top: 45%;
+}
+
+.backmain{
+    position: absolute;
+    left: 80%;
+    bottom: 60%;
+}
+
+.info-container{    
+    position: absolute;
+    width: 45%;
+    height: 60%;
+    background-color: yellow;
+    left: 49%;
+    top: 34%;
+}
+
+.logo-top {
+    position: absolute;
+    top: 13px;
+    left: 8%;
+    width: 15%;
+}
