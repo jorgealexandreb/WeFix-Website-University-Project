@@ -20,7 +20,7 @@
         <p class="top-phrase">Já é utilizador? <a href="login.php">Entrar.</a></p>
         <br>
         <br>
-        <h1 class="main-title">Registo</h1>
+        <h1 class="main-title">Registro</h1>
         <div class="main-container">
             <br>
             <br>

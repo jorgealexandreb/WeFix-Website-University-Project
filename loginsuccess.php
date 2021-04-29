@@ -54,8 +54,15 @@
 <body>
     <div>
         <h1>Bem vindo</h1>
+        
         <img src="usericon.png" alt="" width=25% height=15%>
-        <h2><?=$_SESSION['user_name']?></h2>
+
+        <form action="userprofile.php" method="GET" enctype="multipart/form-data">
+          <<h2><?=$_SESSION['user_name']?></h2>
+          <br>
+          <input class="button" name="profile" type="submit" value="Perfil"></input>
+        </form>    
+        
 
         <button id="first-btn" class="btn"><a href="home.php">Página inicial</a></button>
         <button class="btn"><a href="logout.php">Logout</a></button>

@@ -25,11 +25,11 @@
 <div class="navigation">    
   <img class="logo-container" src="images/weFixLogo.png"> </img>  
   <?php
-        if(!$_SESSION['user_name']){
-            echo '<label class="top-phrase">Já é utilizador? <a href="">Entrar </a>ou<a href=""> Registrar</a></label>';
-        } else{
-           echo '<label class="top-phrase">Olá '.$_SESSION['user_name'] .'! <a href="">Conta </a>ou<a href="logout.php"> Logout</a></label>';
-        }
+        if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {        
+            echo '<label class="top-phrase">Olá '.$_SESSION['user_name'] .'! <a href="userprofile.php">Conta </a>ou<a href="logout.php"> Logout</a></label>';
+          } else{
+            echo '<label class="top-phrase">Já é utilizador? <a href="login.php">Entrar </a>ou<a href="choosing.php"> Registrar</a></label>';
+          }
     ?>
 </div> 
 
@@ -52,9 +52,7 @@
 
         $search = $_GET['search'];
         $submit = $_GET['submit'];
-        $sql = "SELECT services.name, services.description, price.pricePerHr
-        FROM services
-        INNER JOIN price ON services.id=price.id WHERE services.name LIKE '%".$search."%'";
+        $sql = "SELECT service.serviceID, service.name, service.description, price.pricePerHr, `Service Provider`.`serviceProviderID` FROM (service JOIN price ON price.serviceID=service.serviceID) JOIN `Service Provider` ON service.serviceproviderID=`Service Provider`.`serviceProviderID` WHERE service.name LIKE '%".$search."%'";
         $result = $conn->query($sql);        
         $temp=0;              
         
@@ -65,7 +63,8 @@
             </div>';
         }else{
             echo '            
-                <h3 class="qtResults"> 0 Results were found!</h3>                
+                <h3 class="qtResults"> 0 Results were found!</h3>  
+                Error: '.$sql. "<br> ".mysqli_error($conn).'              
             </div>';
         }
         // output data of each row
@@ -103,9 +102,15 @@
             else{
                 echo '<img class="photo" src="images/p1.jpg"> </img>';
             }
-            echo "<h3>Name: " . $row["name"]. "</h3> Description: " . $row["description"]. " <br><br><b>Price $" . $row["pricePerHr"]. "</b>";
+            echo '<h3>' . $row["name"]. '</h3> ' . $row["description"]. '<br><br><b>Price $' . $row["pricePerHr"]. '</b><br>
+                        
+            <form action="newPage.php" method="post">
+            <button type="submit" class="button" 
+                            data-id="'.$row["serviceID"].'">Comprar</button>
+            </form>';
             echo "</div><br>";
             $temp++;
+            #https://www.pastiebin.com/5d1da8d6643ec
         }
 
     }else{

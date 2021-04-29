@@ -15,7 +15,7 @@
     <div class="main-container">
         <h2>Criar Conta</h2>
 
-        <form action="insertclient.php" method="post">
+        <form action="insertProvider.php" method="post">
         <p>Nome de Utilizador</p>
         <div class="form-floating">
             <input type="text" class="form" name="username" placeholder="Nome de Utilizador" required>
@@ -93,13 +93,13 @@
 
         <p>Nome da empresa</p>
         <div class="form-floating">
-            <input type="datetime-local" class="form" placeholder="Nome da empresa">
+            <input type="text" class="form" name="companyName" placeholder="Nome da empresa">
             <label for="floatingInput"></label>
         </div>
 
             <p>NIF da Empresa</p>
         <div class="form-floating">
-            <input type="datetime-local" class="form" placeholder="NIF da Empresa">
+            <input type="text" class="form" name="companyNif" placeholder="NIF da Empresa">
             <label for="floatingInput"></label>
         </div>
 

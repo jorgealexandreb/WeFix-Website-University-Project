@@ -3,7 +3,7 @@
 $sName = "localhost";
 $uName = "root";
 $pass = "";
-$db_name = "pdsoft";
+$db_name = "pdsoft1";
 
 try {
     $conn = new PDO("mysql:host=$sName;dbname=$db_name", 
@@ -12,3 +12,4 @@ try {
 }catch(PDOException $e){
   echo "Connection failed : ". $e->getMessage();
 }
+

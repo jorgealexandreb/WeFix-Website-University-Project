@@ -12,19 +12,19 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
     }else if (empty($password)) {
         header("Location: login.php?error=Insira a sua password.");
     }else {
-        $stmt =$conn->prepare("SELECT * FROM User WHERE userName=?");
+        $stmt =$conn->prepare("SELECT * FROM user WHERE username=?");
         $stmt->execute([$username]);
 
         if ($stmt->rowCount() === 1) {
             $user = $stmt->fetch();
 
-			$user_name = $user['userName'];
+			$user_name = $user['username'];
             $user_password = $user['password'];
             
             if ($username === $user_name){
 
                 if ($password === $user_password){
-                    
+                    $_SESSION['loggedin'] = true;
 					$_SESSION['user_name'] = $user_name;
 					$_SESSION['user_password'] = $user_password;
 			

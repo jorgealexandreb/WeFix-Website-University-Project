@@ -29,7 +29,7 @@
   <body class="text-center">
 
         <main class="form-signin">
-          <p class="top-phrase">Ainda não é utilizador? <a href="home.php">Registe-se.</a></p>
+          <p class="top-phrase">Ainda não é utilizador? <a href="choosing.php">Registe-se.</a></p>
           <form action="auth.php" method="post">
           <img src='images/weFixLogo.png' alt='photo'>
 

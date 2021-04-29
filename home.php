@@ -1,5 +1,6 @@
 <?php
     session_start();
+    connection.php con
 ?>
 
 <!DOCTYPE html>
@@ -20,11 +21,11 @@
 <div class="navigation">    
   <img class="logo-container" src="images/weFixLogo.png"> </img>  
   <?php
-        if(!$_SESSION['user_name']){
-            echo '<label class="top-phrase">Já é utilizador? <a href="">Entrar </a>ou<a href=""> Registrar</a></label>';
-        } else{
-           echo '<label class="top-phrase">Olá '.$_SESSION['user_name'] .'! <a href="">Conta </a>ou<a href="logout.php"> Logout</a></label>';
-        }
+    if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {        
+      echo '<label class="top-phrase">Olá '.$_SESSION['user_name'] .'! <a href="userprofile.php">Conta </a>ou<a href="logout.php"> Logout</a></label>';
+    } else{
+      echo '<label class="top-phrase">Já é utilizador? <a href="login.php">Entrar </a>ou<a href="choosing.php"> Registrar</a></label>';
+    }
     ?>
 </div> 
 

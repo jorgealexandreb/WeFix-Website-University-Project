@@ -89,7 +89,7 @@
         <div class="form-floating">
             <input type="text" class="form" name="nif" placeholder="NIF Pessoal" required>
             <label for="floatingInput"></label>
-
+            
 
         <button class="btn" name="bttn" type="submit">Registe-se</button>
         </form>
