@@ -13,14 +13,16 @@
       die("Connection failed: " . $conn->connect_error);
     }
     
-    $sql = "SELECT Price.pricePerHr FROM Price INNER JOIN service ON Price.serviceID=service.id WHERE service.id=1;";
+    $sql = "SELECT Price.pricePerHr FROM Price INNER JOIN Service ON Price.serviceID = Service.serviceID WHERE Price.serviceID = '".$data-id."';";
     $resultone = $conn->query($sql);
 
-    $sqltwo = "SELECT `name` FROM `service` WHERE `service`.id=2;";
+    $sqltwo = "SELECT `name` FROM `Service` WHERE `Service`.id='".$data-id."'";
     $resultstwo = $conn->query($sqltwo);
 
-    $sqlthree = "SELECT companyName from ServiceProvider INNER JOIN service on ServiceProvider.serviceID=service.id where service.id=2;";
+    $sqlthree = "SELECT companyName from `Service Provider` INNER JOIN Service on `Service Provider`.serviceID=Service.serviceID where Service.serviceID='".$data-id."';";
     $resultsthree = $conn->query($sqlthree);
+
+    $sqlfour = "SELECT locomotionPrice FROM Service WHERE serviceID='".$data-id."';"
     ?>
 
 <!DOCTYPE html>
