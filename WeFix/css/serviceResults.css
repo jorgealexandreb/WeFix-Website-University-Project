@@ -1,0 +1,82 @@
+body{
+    color: black;
+    margin: 0px;
+}
+
+.bar{   
+    position: static;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color:#17252A;
+    color: #DEF2F1;
+    text-align: center;
+}
+
+.qtResults{
+    margin: 0px;
+    padding: 10px;
+    padding-bottom: 25px;
+}
+
+.category{
+    float: left;
+}
+
+.button{
+    background: #3aafA9;
+    color:  white;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    padding: 12px 24px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.searchBox{
+    margin: auto;
+    width: 40%;
+    height: 25px;
+    padding:8px 16px;
+    border-radius: 5px;
+    border-color: #2B7A78;
+}
+
+.searchHome{
+    background-color: #a4e2df;
+    text-align: justify;
+    position:static;
+    top: 50px;    
+    margin: 0px 400px;
+    width: 63%;
+    height: 200px;
+    padding: 16px 16px;
+    border-radius: 10px;
+    border-color: #3aafA9;
+    opacity: 0.95;
+}
+
+.photo{
+    float:left;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+}
+
+.custom-select{
+    position: absolute;
+    font-family: Arial;
+    margin: 50px 50px;
+  }
+
+  select, .catText{
+    margin: 10px 50px;
+  }

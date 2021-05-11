@@ -1,0 +1,85 @@
+body{
+    color: #feffff;
+    margin: 0px;
+}
+
+.container{
+    background-image: url(back.jpg);       
+    width: 100%;
+    height: 600px;
+    position: static;
+    background-size: cover;    
+    margin: 0px 0px 20px 00px;
+}
+
+.searchHome{
+    background-color: #3AAFA9;
+    position:absolute;
+    top:30%;
+    left:30%;
+    margin: auto;
+    width: 40%;
+    padding:8px 16px;
+    border-radius: 20px;
+    border-color: #2B7A78;
+    opacity: 0.95;
+    color:#feffff;    
+}
+
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.button{
+    background: #17252A;
+    color: #DEF2F1;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    padding: 12px 24px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+i:hover {
+    color: #3AAFA9;    
+}
+
+.icon{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.mainPoints{
+    width: 30%;
+    height: 30%;
+    background-size: cover; 
+    float: right;
+    padding-right: 15%;
+    padding-top: 10px;
+
+}
+
+.aboutUs{
+    color: black;  
+    background-color: #feffff; 
+    position: relative;
+    padding: 0px 0px 120px 20px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    position: static;
+}
+

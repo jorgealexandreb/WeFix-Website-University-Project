@@ -1,0 +1,15 @@
+.footer{
+    z-index: 1;
+    position: relative;
+    margin-top: 1%;
+    margin-bottom: 0%;
+    border-top: 2px solid;
+    border-color: #DEF2F1; 
+    background-color:#17252A;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    color: #DEF2F1;
+    text-align: center;
+    padding: 20px 0px 20px 20px;
+}
+
